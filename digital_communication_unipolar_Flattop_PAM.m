@@ -26,16 +26,3 @@ for i =1:length(ind)
     pam(ind(i):ind(i)+on_samp) = m(ind(i));
 end
 
-subplot(3,1,1);
-plot(n,s);
-ylim([-0.2 1.2]);
-
-subplot(3,1,2);
-plot(n,m,'r');
-ylim([-1.2 2*am+1]);
-
-subplot(3,1,3);
-plot(n,pam,'g');
-ylim([-1.2 2*am+1]);
-hold on;
-plot(n,m,'m');
